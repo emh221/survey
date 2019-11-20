@@ -1,35 +1,41 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
-    <script src="js/jquery-3.4.1.js"></script>
-    <script src="js/scripts.js"></script>
-    <title></title>
-  </head>
-  <body>
-    <div class="container">
-      <h1 class= "text-center">Eric's online shoe store.</h1>
-      <h3 class = "text-center">To buy my shoes, select some shoes that you love from below,<br> then fill out the shipping and purchase information. </h3>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title>Buy Shoes Here!</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class= "text-center">Eric's Online Shoe Store.</h1>
+    <h3 class = "text-center">To buy my shoes, select some shoes that you love from below,<br> then fill out the shipping and purchase information. </h3>
+    <div class="blanks text-center">
       <form>
+        <p>Select some shoes from the Stlyes below:</p>
+        <select class="form-control" id="shoes">
+          <option>Sneakers</option>
+          <option> Boots</option>
+          <option> Flip-Flops</option>
+          <option>Heels</option>
+        </select>
         <div class="radio">
+          <p>Select a shipping option:</p>
           <label>
-            <input type="radio" name="shoes" value="sneakers">
-            Sneakers
-          </label>
+            <input type="radio" name="shoes" value="Standard">
+            Standard (5-7 Business Days)
+          </label><br>
           <label>
-            <input type="radio" name="shoes" value="boots">
-            Boots
-          </label>
+            <input type="radio" name="shoes" value="Rush">
+            Rushed (2  Business Days)
+          </label><br>
           <label>
-          <input type="radio" name="shoes" value="flip-flops">
-          Flip-Flops
-          </label>
-          <label>
-          <input type="radio" name="shoes" value="heels">
-          Heels
+            <input type="radio" name="shoes" value="overnight">
+            Overnight
           </label>
         </div>
       </form>
     </div>
-  </body>
+  </div>
+</body>
